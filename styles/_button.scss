@@ -1,0 +1,30 @@
+@import "colors";
+
+@mixin detalleBoton($color: gray, $padding:10px){
+    background-color: $color;
+    color:$color-white;
+    padding: $padding;
+    border:4px solid $color;
+    border-radius: 9px;
+    cursor:pointer;
+    font-size: 15px;
+}
+
+.btn-red{
+    @include detalleBoton($color:$color-red);
+}
+.btn-blue{
+    @include detalleBoton($color:$color-blue);
+}
+.btn-yellow{
+    @include detalleBoton($color:$color-yellow);
+}
+.btn-green{
+    @include detalleBoton($color:$color-green);
+}
+.btn-pink{
+    @include detalleBoton($color:$color-pink);
+}
+.btn-orange{
+    @include detalleBoton($color:$color-orange);
+}
